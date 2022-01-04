@@ -5,4 +5,4 @@ RUN chmod +x /etc/timescript.sh
 ENV SLEEPTIME=
 RUN ls -lrt etc/
 RUN cat /etc/timescript.sh
-ENTRYPOINT ["/etc/timescript.sh"]
+CMD ["/etc/timescript.sh"]
