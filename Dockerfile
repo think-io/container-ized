@@ -4,4 +4,5 @@ COPY timescript.sh /etc/
 RUN chmod +x /etc/timescript.sh
 ENV SLEEPTIME=
 RUN ls -lrt etc/
-ENTRYPOINT ["timescript.sh"]
+RUN less /etc/timescript.sh
+ENTRYPOINT ["/etc/timescript.sh"]
