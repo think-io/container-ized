@@ -1,5 +1,6 @@
 FROM redhat/ubi8-minimal
 RUN echo this is base image
-COPY timescript.sh /etc/
+COPY timescript.sh .
 ENV SLEEPTIME=
-ENTRYPOINT ["/etc/timescript.sh"]
+RUN ls -lrt
+ENTRYPOINT ["timescript.sh"]
