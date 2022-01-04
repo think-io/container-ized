@@ -1,2 +1,2 @@
-FROM ubi8/ubi-minimal
+FROM redhat/ubi8-minimal
 RUN echo this is base image
