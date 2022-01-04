@@ -7,4 +7,6 @@ while [ $SECONDS -lt $end ]; do
     echo "Gone to sleep mode for" $end "seconds" # Do what you want.
     sleep 30
     echo "Time Now: `date +%H:%M:%S`"
-done
+done;
+echo "sleep time completed"
+exit 0;
